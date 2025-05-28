@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace SUSP.UI
+{
+    public partial class homePacienteTeste : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            trazNomeLabel.Text = Session["idPaciente"].ToString();
+        }
+    }
+}
